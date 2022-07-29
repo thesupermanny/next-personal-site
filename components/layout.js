@@ -29,6 +29,11 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
+            <nav>
+              <div></div>
+              <div></div>
+              <div></div>
+            </nav>
             <Image
               priority
               src='/images/profile.jpg'
