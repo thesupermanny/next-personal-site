@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
+import AppNavbar from './AppNavbar';
 
 const name = 'Emanuel Guevara';
 export const siteTitle = 'Hire Emanuel Guevara';
@@ -26,14 +27,10 @@ export default function Layout({ children, home }) {
         <meta name='og:title' content={siteTitle} />
         <meta name='twitter:card' content='summary_large_image' />
       </Head>
+      <AppNavbar />
       <header className={styles.header}>
         {home ? (
           <>
-            <nav>
-              <div></div>
-              <div></div>
-              <div></div>
-            </nav>
             <Image
               priority
               src='/images/profile.jpg'
