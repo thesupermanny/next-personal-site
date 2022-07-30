@@ -5,6 +5,7 @@ import Link from 'next/link';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import AppNavbar from './AppNavbar';
+import AppHero from './AppHero';
 
 const name = 'Emanuel Guevara';
 export const siteTitle = 'Hire Emanuel Guevara';
@@ -30,17 +31,7 @@ export default function Layout({ children, home }) {
       <AppNavbar />
       <header className={styles.header}>
         {home ? (
-          <>
-            <Image
-              priority
-              src='/images/profile.jpg'
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
+          <AppHero />
         ) : (
           <>
             <Link href='/'>
