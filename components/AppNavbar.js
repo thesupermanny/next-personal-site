@@ -2,7 +2,7 @@ import React from 'react';
 
 function AppNavbar(props) {
   return (
-    <div className='navbar bg-base-100'>
+    <div className='navbar bg-base-100 fixed z-50'>
       <div className='navbar-start'>
         <div className='dropdown'>
           {/* Label for mobile that dissapears when goes large */}

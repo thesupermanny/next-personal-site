@@ -5,6 +5,7 @@ import Date from '../components/date';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
+import AppCard from '../components/AppCard';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -21,18 +22,22 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>
-          Hello my name is Emanuel. Im a software engineer, I am fluent in
-          English and Spanish. You can contact me on{' '}
-          <a href='https://www.linkedin.com/in/emanuelguevara'>LinkedIn</a>
-        </p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href='https://nextjs.org/learn'>our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <AppCard />
+      {/* <div class='flex flex-col w-full lg:flex-row'>
+        <div class='grid flex-grow h-32 card bg-base-300 rounded-box place-items-center'>
+          content
+        </div>
+        <div class='divider lg:divider-horizontal'></div>
+        <div class='grid flex-grow h-32 card bg-base-300 rounded-box place-items-center'>
+          content
+        </div>
+        <div class='divider lg:divider-horizontal'></div>
+        <div class='grid flex-grow h-32 card bg-base-300 rounded-box place-items-center'>
+          content
+        </div>
+      </div> */}
+
+      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
@@ -47,7 +52,7 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
-      </section>
+      </section> */}
     </Layout>
   );
 }
