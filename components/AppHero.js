@@ -23,10 +23,15 @@ function AppHero(props) {
               <a
                 className='btn btn-active'
                 href='https://www.linkedin.com/in/emanuelguevara'
+                target='_blank'
               >
                 LinkedIn
               </a>
-              <a className='btn' href='https://www.github.com/thesupermanny'>
+              <a
+                className='btn'
+                href='https://www.github.com/thesupermanny'
+                target='_blank'
+              >
                 Github
               </a>
             </div>

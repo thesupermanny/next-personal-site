@@ -1,16 +1,18 @@
 import React from 'react';
 
-function AppCard(props) {
+function AppCard({ img, alt, title, desc, site }) {
   return (
-    <div class='card card-compact w-96 bg-base-100 shadow-xl'>
+    <div className='card card-compact w-96 bg-base-100 shadow-xl'>
       <figure>
-        <img src='https://placeimg.com/400/225/arch' alt='Shoes' />
+        <img src={img} alt={alt} />
       </figure>
-      <div class='card-body'>
-        <h2 class='card-title'>Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div class='card-actions justify-end'>
-          <button class='btn btn-primary'>Buy Now</button>
+      <div className='card-body'>
+        <h2 className='card-title'>{title}</h2>
+        <p>{desc}</p>
+        <div className='card-actions justify-end'>
+          <a href={site} target='_blank' className='btn btn-primary'>
+            Visit
+          </a>
         </div>
       </div>
     </div>

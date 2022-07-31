@@ -31,7 +31,7 @@ function AppNavbar(props) {
               <a>About</a>
             </li>
             <li>
-              <a>Projects</a>
+              <a href='#projects'>Projects</a>
             </li>
           </ul>
         </div>

@@ -12,6 +12,44 @@ import AppCard from './AppCard';
 const name = 'Emanuel Guevara';
 export const siteTitle = 'Hire Emanuel Guevara';
 
+{
+  /* <header className={styles.header}>
+{home ? (
+  <>
+    <AppHero />
+  </>
+) : (
+  <>
+    <Link href='/'>
+      <a>
+        <Image
+          priority
+          src='/images/profile.jpg'
+          className={utilStyles.borderCircle}
+          height={108}
+          width={108}
+          alt={name}
+        />
+      </a>
+    </Link>
+    <h2 className={utilStyles.headingLg}>
+      <Link href='/'>
+        <a className={utilStyles.colorInherit}>{name}</a>
+      </Link>
+    </h2>
+  </>
+)}
+</header>
+<main>{children}</main>
+{!home && (
+<div className={styles.backToHome}>
+  <Link href='/'>
+    <a>← Back to home</a>
+  </Link>
+</div>
+)} */
+}
+
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
@@ -58,14 +96,17 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href='/'>
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+      <main>
+        {home ? (
+          children
+        ) : (
+          <div className={styles.backToHome}>
+            <Link href='/'>
+              <a>← Back to home</a>
+            </Link>
+          </div>
+        )}
+      </main>
       <AppFooter />
     </div>
   );
