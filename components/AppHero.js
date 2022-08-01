@@ -5,7 +5,7 @@ import Link from 'next/link';
 function AppHero(props) {
   return (
     <div>
-      <div className='hero min-h-screen bg-base-200'>
+      <div id='about' className='hero min-h-screen bg-base-200'>
         <div className='hero-content flex-col lg:flex-row mt-16 lg:mt-0'>
           <img
             src='/images/profile2640.png'
