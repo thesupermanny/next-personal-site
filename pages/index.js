@@ -24,8 +24,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <div className='flex justify-center'>
         <h2 className='text-lg m-4'>
-          Projects
-          <span className='badge badge-md'>NEW</span>
+          Projects <span className='badge badge-md'>NEW</span>
         </h2>
       </div>
       <div id='projects' className='flex flex-col w-full lg:flex-row my-2'>
