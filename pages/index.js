@@ -33,7 +33,7 @@ export default function Home({ allPostsData }) {
           <AppCard
             title={'Fullstack Fighters'}
             desc={'Multiplayer fighting game with socket.io room feature'}
-            alt={'description for picture'}
+            alt={'Screenshot of Fullstack Figthers game'}
             img={'/images/project01.png'}
             site={'https://fullstackfighters.herokuapp.com/'}
           />
@@ -41,17 +41,20 @@ export default function Home({ allPostsData }) {
         <div className='divider lg:divider-horizontal'></div>
         <div className='grid flex-grow h-auto card bg-base-100 rounded-box place-items-center my-2 pb-6'>
           <AppCard
-            title={'title'}
-            desc={'this is the description'}
-            alt={'description for picture'}
-            img={'https://placeimg.com/400/225/arch'}
+            title={'Bullseye'}
+            desc={
+              'Bullseye is an eCommerce website for snacks and a clone of a very popular store.'
+            }
+            alt={'Screenshot of Bullseye Store'}
+            img={'/images/project02.png'}
+            site={'https://github.com/2204-Federation/federation-store'}
           />
         </div>
       </div>
 
       <AppContact />
 
-      {/* Blog Posts below */}
+      {/* Blog Posts below
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
@@ -67,7 +70,7 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
-      </section>
+      </section> */}
     </Layout>
   );
 }
