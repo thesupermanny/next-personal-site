@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "daisyui": "^2.20.0",
     "date-fns": "^2.29.1",
     "gray-matter": "^4.0.3",

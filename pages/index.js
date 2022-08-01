@@ -6,6 +6,7 @@ import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import AppCard from '../components/AppCard';
+import AppContact from '../components/AppContact';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -47,6 +48,10 @@ export default function Home({ allPostsData }) {
           />
         </div>
       </div>
+
+      <AppContact />
+
+      {/* Blog Posts below */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>

@@ -36,7 +36,10 @@ function AppNavbar(props) {
           </ul>
         </div>
         <a className='btn btn-ghost normal-case text-xl lg:hidden'>E.G.</a>
-        <a className='btn btn-ghost hidden normal-case text-xl lg:inline-flex'>
+        <a
+          href='/'
+          className='btn btn-ghost hidden normal-case text-xl lg:inline-flex'
+        >
           Emanuel Guevara
         </a>
       </div>
@@ -46,7 +49,7 @@ function AppNavbar(props) {
             <a>About</a>
           </li>
           <li>
-            <a>Projects</a>
+            <a href='#projects'>Projects</a>
           </li>
         </ul>
       </div>
