@@ -39,34 +39,34 @@ function AppContact(props) {
             <form
               ref={form}
               onSubmit={sendEmail}
-              class='form-control w-full max-w-xs lg:max-w-full'
+              className='form-control w-full max-w-xs lg:max-w-full'
             >
-              <label class='label'>
-                <span class='label-text'>What is your name?</span>
+              <label className='label'>
+                <span className='label-text'>What is your name?</span>
               </label>
               <input
                 type='text'
                 name='fromName'
                 placeholder='Name'
-                class='input input-bordered w-full max-w-xs lg:max-w-full'
+                className='input input-bordered w-full max-w-xs lg:max-w-full'
                 required
               />
-              <label class='label'>
-                <span class='label-text'>What is your email?</span>
+              <label className='label'>
+                <span className='label-text'>What is your email?</span>
               </label>
               <input
                 type='email'
                 name='fromEmail'
                 placeholder='Email'
-                class='input input-bordered w-full max-w-xs lg:max-w-full'
+                className='input input-bordered w-full max-w-xs lg:max-w-full'
                 required
               />
-              <label class='label'>
-                <span class='label-text'>Your message</span>
+              <label className='label'>
+                <span className='label-text'>Your message</span>
               </label>
               <textarea
                 name='message'
-                class='textarea textarea-primary h-60'
+                className='textarea textarea-primary h-60'
                 placeholder='Your awesome message...'
                 required
               ></textarea>

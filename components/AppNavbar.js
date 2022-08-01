@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AppNavbar(props) {
+function AppNavbar({ about, projects, contact }) {
   return (
     <div className='navbar bg-base-100 fixed z-50'>
       <div className='navbar-start'>
@@ -28,10 +28,10 @@ function AppNavbar(props) {
             className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
           >
             <li>
-              <a href='#about'>About</a>
+              <a href={about}>About</a>
             </li>
             <li>
-              <a href='#projects'>Projects</a>
+              <a href={projects}>Projects</a>
             </li>
           </ul>
         </div>
@@ -48,15 +48,15 @@ function AppNavbar(props) {
       <div className='navbar-center hidden lg:flex'>
         <ul className='menu menu-horizontal p-0'>
           <li>
-            <a href='#about'>About</a>
+            <a href={about}>About</a>
           </li>
           <li>
-            <a href='#projects'>Projects</a>
+            <a href={projects}>Projects</a>
           </li>
         </ul>
       </div>
       <div className='navbar-end'>
-        <a href='#contact' className='btn'>
+        <a href={contact} className='btn'>
           Contact
         </a>
       </div>
