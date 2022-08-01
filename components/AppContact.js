@@ -27,7 +27,7 @@ function AppContact(props) {
   };
   return (
     <>
-      <div className='flex justify-center'>
+      <div id='contact' className='flex justify-center pt-16'>
         <h2 className='text-lg m-4'>
           Contact <span className='badge badge-md'>ME</span>
         </h2>

@@ -23,12 +23,12 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div className='flex justify-center'>
+      <div id='projects' className='flex justify-center pt-16'>
         <h2 className='text-lg m-4'>
           Projects <span className='badge badge-md'>NEW</span>
         </h2>
       </div>
-      <div id='projects' className='flex flex-col w-full lg:flex-row my-2'>
+      <div className='flex flex-col w-full lg:flex-row my-2'>
         <div className='grid flex-grow h-auto card bg-base-100 rounded-box place-items-center my-2 pb-6'>
           <AppCard
             title={'Fullstack Fighters'}
