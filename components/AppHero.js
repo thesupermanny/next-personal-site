@@ -14,10 +14,10 @@ function AppHero(props) {
           <div>
             <h1 className='text-5xl font-bold'>Emanuel Guevara</h1>
             <p className='py-6'>
-              Hello my name is Emanuel Guevara. Im a software engineer, I am
-              looking forward to exploring Fullstack roles where I can be a part
-              of a team with lots of mentorship, and help build applications
-              that make a difference in peoples lives.{' '}
+              Hello my name is Emanuel Guevara. I am a software engineer who is
+              looking forward to explore full stack roles. I would like to be
+              part of a team that provides mentorship, and help build
+              applications that make a difference in peoples lives.{' '}
             </p>
             <div className='btn-group'>
               <a
